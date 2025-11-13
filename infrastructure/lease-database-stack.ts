@@ -165,7 +165,6 @@ export class LeaseDatabaseStack extends cdk.Stack {
       requireTLS: true,
       maxConnectionsPercent: 100,
       maxIdleConnectionsPercent: 50,
-      connectionBorrowTimeout: cdk.Duration.seconds(30),
       debugLogging: false,
     });
 
@@ -1291,17 +1290,12 @@ export class LeaseDatabaseStack extends cdk.Stack {
         width: 12,
       }),
       new cloudwatch.GraphWidget({
-        title: 'Database - Latency',
+        title: 'Database - Connections',
         left: [
-          this.dbCluster.metricReadLatency({
+          this.dbCluster.metricDatabaseConnections({
             statistic: 'Average',
             period: cdk.Duration.minutes(5),
-            label: 'Read Latency',
-          }),
-          this.dbCluster.metricWriteLatency({
-            statistic: 'Average',
-            period: cdk.Duration.minutes(5),
-            label: 'Write Latency',
+            label: 'Database Connections',
           }),
         ],
         width: 12,
