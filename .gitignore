@@ -1,0 +1,64 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# CDK
+cdk.out/
+.cdk.staging/
+*.js
+*.d.ts
+!jest.config.js
+!lambda/**/*.js
+!schema/**/*.js
+
+# TypeScript
+*.tsbuildinfo
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# AWS
+.aws/
+*.pem
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Build outputs
+dist/
+build/
+
+# Secrets (just in case)
+*secret*
+*credentials*
+!lambda/api/db/connection.js
+
+# Kiro IDE specific
+.kiro/settings/mcp.json
