@@ -272,7 +272,7 @@ TI Allowance Summary:
 
 ---
 
-## 📈 Business Metrics & ROI
+## 📈 Business Metrics
 
 ### Time Savings
 
@@ -288,15 +288,6 @@ TI Allowance Summary:
 - **Missed Expirations**: Automated alerts reduce risk by 95%
 - **Data Errors**: Single source of truth eliminates duplicate data issues
 - **Compliance**: Audit trail ensures regulatory compliance
-
-### Cost Efficiency
-
-**Infrastructure Costs**: ~$100-300/month
-- Aurora Serverless: $50-200/month (scales with usage)
-- Lambda: $20-50/month
-- Other AWS services: $30-50/month
-
-**ROI**: Pays for itself with just 1-2 hours of saved time per month
 
 ---
 
